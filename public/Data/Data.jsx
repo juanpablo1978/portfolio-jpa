@@ -3,6 +3,69 @@ import { GrGroup } from "react-icons/gr";
 import { AiOutlineApi } from "react-icons/ai";
 import { TbSeo } from "react-icons/tb";
 import { BsLayoutTextSidebarReverse } from "react-icons/bs";
+import { CiLinkedin, CiFacebook } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { LuHome } from "react-icons/lu";
+import { GoPerson, GoBook } from "react-icons/go";
+import { IoCodeSlash } from "react-icons/io5";
+import { SlSpeech } from "react-icons/sl";
+
+export const socialNetworks = [
+  {
+    id: 1,
+    logo: <CiLinkedin />,
+    src: "https://www.linkedin.com/in/juan-pablo-andrujovich-921386189/",
+  },
+  {
+    id: 2,
+    logo: <FaGithub />,
+    src: "https://github.com/juanpablo1978",
+  },
+  {
+    id: 3,
+    logo: <CiFacebook />,
+    src: "https://www.facebook.com/juanpablo.andrujovich",
+  },
+  {
+    id: 4,
+    logo: <FaXTwitter />,
+    src: "https://x.com/JAndrujovich",
+  },
+];
+
+export const itemsNavbar = [
+  {
+    id: 1,
+    title: "Home",
+    icon: <LuHome className="h-6 w-6" />,
+    link: "/",
+  },
+  {
+    id: 2,
+    title: "AboutMe",
+    icon: <GoPerson className="h-6 w-6" />,
+    link: "/aboutme",
+  },
+  {
+    id: 3,
+    title: "ServicesComponent",
+    icon: <GoBook className="h-6 w-6" />,
+    link: "/servicescomponent",
+  },
+  {
+    id: 4,
+    title: "Portfolio",
+    icon: <IoCodeSlash className="h-6 w-6" />,
+    link: "/portfolio",
+  },
+  {
+    id: 5,
+    title: "Testimonials",
+    icon: <SlSpeech className="h-6 w-6" />,
+    link: "/testimonials",
+  },
+];
 
 export const dataAboutPage = [
   {
@@ -11,7 +74,7 @@ export const dataAboutPage = [
     title: "Desarrollo Web",
     subtitle: "CoderHouse",
     description:
-      "HTML y CSS, versionado de código con GIT, GitHub, SASS, Bootstrap, SEO, flexbox, grid, Animaciones, Transformaciones y Transiciones, diseño responsive, deploy, presupuesto e interacción con el cliente.",
+      "HTML y CSS - Prototipado, wireframe y maquetado - Versionado de código con GIT, GitHub - SASS - Bootstrap - SEO - Box Modeling - Flexbox - Grid - Animaciones, Transformaciones y Transiciones - Diseño responsive - Deploy - Presupuesto e interacción con el cliente.",
   },
   {
     id: 2,
@@ -19,7 +82,7 @@ export const dataAboutPage = [
     title: "Javascript",
     subtitle: "CoderHouse",
     description:
-      " Sintaxis y variables, control de flujos, ciclos, programación con funciones, objetos, arreglos, funciones de órden superior, DOM, eventos, storage, y JSON, Promises & Async, AJAX & Fetch.",
+      " Sintaxis y variables - Control de flujos, Ciclos/Iteraciones - Programación con funciones - Objetos - Arrays - Funciones de órden superior - DOM - Eventos - Storage y JSON - Operadores avanzados -  Promises & Async - AJAX & Fetch.",
   },
   {
     id: 3,
@@ -27,7 +90,7 @@ export const dataAboutPage = [
     title: "React.js",
     subtitle: "CoderHouse",
     description:
-      "Promises, asincronía y MAP, consumo de APIs, routing y navegación, eventos, Context, técnicas de rendering, Firebase.",
+      " JSX y transpiling - Componentes - Promises, asincronía y MAP - Consumo de APIs - Routing y navegación - Eventos - Context - Técnicas de rendering - Firebase.",
   },
   {
     id: 4,
@@ -35,7 +98,7 @@ export const dataAboutPage = [
     title: "Desarrollador Frontend",
     subtitle: "Aikodev",
     description:
-      "Desarrollador Frontend React: Javascript, React.js, Next, Tailwind, StoryBook, Markdown, GIT, GitHub, Metodolías Agiles, Jira.",
+      "Desarrollador Frontend React: HTML y CSS -  Javascript - React.js - Next - Tailwind - Librerías UI -  StoryBook - Markdown - GIT - GitHub - Metodolías Agiles - Jira.",
   },
 ];
 
@@ -77,29 +140,29 @@ export const dataPortfolio = [
     id: 1,
     title: "Sass Portfolio",
     image: "/Images/portfoliosass.png",
-    urlGithub: "#!",
-    urlDemo: "#!",
+    urlGithub: "https://github.com/juanpablo1978/portfolio",
+    urlDemo: "https://sass-portfolio-psi.vercel.app/",
   },
   {
     id: 2,
     title: "Asociación",
     image: "/Images/asociacion.png",
-    urlGithub: "#!",
-    urlDemo: "#!",
+    urlGithub: "https://github.com/juanpablo1978/asociacion.github.io",
+    urlDemo: "https://asociacion-github-io.vercel.app/",
   },
   {
     id: 3,
     title: "React Movies",
     image: "/Images/reactmovies.png",
-    urlGithub: "#!",
-    urlDemo: "#!",
+    urlGithub: "https://github.com/juanpablo1978/react-movies",
+    urlDemo: "https://react-movies-murex.vercel.app/",
   },
   {
     id: 4,
     title: "Ghibli Api",
     image: "/Images/ghibliapi.png",
-    urlGithub: "#!",
-    urlDemo: "#!",
+    urlGithub: "https://github.com/Aikodev-labs/Ghibli-API-platform",
+    urlDemo: "https://ghibliapi.aikodev.com/",
   },
   {
     id: 5,

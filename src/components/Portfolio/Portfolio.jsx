@@ -10,17 +10,22 @@ const Portfolio = () => {
           </h2>
         </article>
 
-        <article className="flex justify-center flex-wrap md:px-44 lg:px-96 gap-5">
+        <article className="flex justify-center flex-wrap md:px-96 lg:px-96 gap-5 lg:gap-8">
           {dataPortfolio.map((data) => (
             <article
-              className="w-[250px] h-[340px] rounded-md border-slate-500 border-[2px] px-2 py-3"
+              className="w-[250px] h-[340px] lg:w-[400px] lg:h-[440px] md:w-[350px] md:h-[440px] rounded-md
+               border-slate-500  border-[2px] px-2 py-3  hover:bg-zinc-900
+                transition-all duration-300 hover:cursor-pointer "
               key={data.id}
             >
               <h3 className="text-white text-xl font-semibold pb-2 px-3">
                 {data.title}
               </h3>
 
-              <article className="w-[235px] h-[200px] rounded-md pb-5 ">
+              <article
+                className="w-[235px] h-[240px] lg:w-[380px] lg:h-[300px] md:w-[335px] md:h-[300px]
+               rounded-md pb-5 "
+              >
                 <img
                   className="w-full h-full object-cover rounded-md border-slate-500 border-[1px]"
                   src={data.image}
