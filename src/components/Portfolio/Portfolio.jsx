@@ -6,7 +6,7 @@ const Portfolio = () => {
       <section className="flex flex-col justify-center">
         <article>
           <h2 className="text-white text-2xl lg:text-4xl font-bold text-center pb-9 flex-wrap">
-            Mis últimos proyectos
+            PROYECTOS
           </h2>
         </article>
 

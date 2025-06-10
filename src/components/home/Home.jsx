@@ -12,8 +12,8 @@ const Home = () => {
       className="min-h-screen text-4xl bg-black z-20
     flex justify-center items-center"
     >
-      <section className="lg:flex lg:gap-[115px] md:gap-[115px]">
-        <article className="rounded-full w-[300px] h-[300px] z-40 hidden lg:block lg:mt-8 md:block md:mt-8">
+      <section className="lg:flex lg:gap-[115px] md:gap-[115px] mt-52 lg:mt-0 md:mt-0 px-11 lg:px-0 md:px-0">
+        <article className="rounded-full w-[300px] h-[300px] z-40  lg:mt-8  md:mt-8">
           <img
             className="rounded-full w-full h-full object-cover"
             src="/Images/perfilport.jpg"
@@ -42,9 +42,9 @@ const Home = () => {
             <button
               onClick={goToPortfolio}
               className="text-slate-500 border-[2px] border-slate-500 p-2 rounded-lg text-2xl font-normal
-          hover:text-slate-700 hover:border-gray-700 transition-all duration-300"
+          hover:text-slate-700 hover:border-gray-700 transition-all duration-300 lg:w-52"
             >
-              Ver proyectos
+              PROYECTOS
             </button>
           </div>
         </article>

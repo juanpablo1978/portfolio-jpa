@@ -10,7 +10,7 @@ const ServicesComponent = () => {
         <h2 className="text-center py-8 lg:pb-8 lg:text-4xl text-3xl font-semibold">
           Mis servicios
         </h2>
-        <p className="text-lg text-slate-500 pb-6">
+        <p className="text-[22px] text-slate-500 pb-6">
           Enfocado en crear y mantener la parte visual e interactiva de las
           aplicaciones web utilizando React.js ; aquí un desglose de mis
           principales responsabilidades: Desarrollo de interfaces de usuario -

@@ -98,7 +98,7 @@ export const dataAboutPage = [
     title: "Desarrollador Frontend",
     subtitle: "Aikodev",
     description:
-      "Desarrollador Frontend React: HTML y CSS -  Javascript - React.js - Next - Tailwind - Librerías UI -  StoryBook - Markdown - GIT - GitHub - Metodolías Agiles - Jira.",
+      "Desarrollador Frontend React: HTML y CSS -  Javascript - React.js - Next - Tailwind - Librerías UI -  StoryBook - Markdown - GitHub - Metodolías Agiles - Jira - GIT Flow.",
   },
 ];
 

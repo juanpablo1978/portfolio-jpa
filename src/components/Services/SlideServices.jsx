@@ -1,48 +1,23 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
 import { serviceData } from "/public/Data/Data.jsx";
 
 const SlideServices = () => {
   return (
-    <Swiper
-      breakpoints={{
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 15,
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 15,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 15,
-        },
-      }}
-      freeMode={true}
-      pagination={{
-        clickable: true,
-      }}
-      modules={[Pagination]}
-      className="h-[280px] md:h-[340px] w-[270px] md:w-[550px]"
-    >
-      {serviceData.map((item, index) => (
-        <SwiperSlide key={index}>
-          <div
-            className="flex px-4 py-8 h-auto md:h-[290px] rounded-lg cursor-pointer
-           bg-white/15 background-blur-sm sm:flex-col gap-x-6 
-           sm:gap-x-0 group transition-all duration-300 
-           border-2"
+    <section className="min-h-screen grid grid-cols-1 gap-y-8">
+      {serviceData.map((service) => {
+        return (
+          <article
+            className="w-[340px] h-[330px] lg:w-[400px] lg:h-[440px] md:w-[350px] md:h-[440px] rounded-md
+               border-slate-500  border-[2px] px-4 py-6 flex flex-col gap-y-4 "
+            key={service.id}
           >
-            <div className="mb-4 text-3xl text-teal-700">{item.icon}</div>
-            <div>
-              <h3 className="mb-4 text-lg">{item.title}</h3>
-              <p className="text-sm">{item.description}</p>
-            </div>
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+            <span className="text-teal-700">{service.icon}</span>
+            <h2 className="text-3xl">{service.title}</h2>
+
+            <p className="text-2xl text-gray-500">{service.description}</p>
+          </article>
+        );
+      })}
+    </section>
   );
 };
 
