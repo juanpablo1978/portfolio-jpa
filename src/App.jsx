@@ -5,7 +5,6 @@ import Header from "./layout/Header/Header";
 import AboutMe from "./components/AboutMe/AboutMe";
 import ServicesComponent from "./components/Services/ServicesComponent";
 import Portfolio from "./components/Portfolio/Portfolio";
-import Testimonials from "./components/Testimonials/Testimonials";
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
         <Route path="/aboutme" Component={AboutMe} />
         <Route path="/servicescomponent" Component={ServicesComponent} />
         <Route path="/portfolio" Component={Portfolio} />
-        <Route path="/testimonials" Component={Testimonials} />
       </Routes>
       <NavBar />
     </>

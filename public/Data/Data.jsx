@@ -1,15 +1,13 @@
-import { DiResponsive } from "react-icons/di";
 import { GrGroup } from "react-icons/gr";
 import { AiOutlineApi } from "react-icons/ai";
 import { TbSeo } from "react-icons/tb";
 import { BsLayoutTextSidebarReverse } from "react-icons/bs";
-import { CiLinkedin, CiFacebook } from "react-icons/ci";
+import { CiLinkedin, CiFacebook, CiMobile3 } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { LuHome } from "react-icons/lu";
 import { GoPerson, GoBook } from "react-icons/go";
-import { IoCodeSlash } from "react-icons/io5";
-import { SlSpeech } from "react-icons/sl";
+import { IoCodeSlash, IoCloudOutline } from "react-icons/io5";
 
 export const socialNetworks = [
   {
@@ -59,12 +57,6 @@ export const itemsNavbar = [
     icon: <IoCodeSlash className="h-6 w-6" />,
     link: "/portfolio",
   },
-  {
-    id: 5,
-    title: "Testimonials",
-    icon: <SlSpeech className="h-6 w-6" />,
-    link: "/testimonials",
-  },
 ];
 
 export const dataAboutPage = [
@@ -105,33 +97,39 @@ export const dataAboutPage = [
 export const serviceData = [
   {
     icon: <BsLayoutTextSidebarReverse />,
-    title: "Desarrollo de UI",
+    title: "Mantenimiento y mejora continua de sitios existentes",
     description:
-      "Crear componentes reutilizables y eficientes para construir interfaces de usuario atractivas y funcionales.",
+      "Actualización de contenido, refactorización de código, mejoras en la accesibilidad y rendimiento de sitios ya desarrollados. Diagnóstico y resolución de bugs, implementación de nuevas funcionalidades y adaptación a nuevas necesidades del cliente.",
   },
   {
-    icon: <DiResponsive />,
+    icon: <CiMobile3 />,
     title: "Diseño responsivo",
     description:
-      " Asegurando que la aplicación se vea y funcione bien en una variedad de dispositivos y tamaños de pantalla.",
+      "Creación de interfaces adaptables a todo tipo de dispositivos (móviles, tablets y escritorio) utilizando tecnologías modernas como HTML5, CSS3, JavaScript, React y frameworks CSS. Foco en experiencia de usuario fluida y diseño limpio.",
   },
   {
     icon: <GrGroup />,
-    title: "Colaboración con otros equipos",
+    title: "Desarrollo de aplicaciones con React / Next.js",
     description:
-      "Para garantizar una integración fluida y coherente de todas las partes de la aplicación.",
+      "Creación de aplicaciones web modernas con React y/o Next.js, aprovechando renderizado del lado del servidor (SSR), generación estática (SSG), rutas dinámicas y optimización automática de recursos.",
   },
   {
     icon: <AiOutlineApi />,
     title: "Integración con APIs",
     description:
-      "Conectar la interfaz de usuario con servicios y APIs del backend para obtener y enviar datos.",
+      "Consumo e integración de APIs REST o GraphQL para conectar el frontend con bases de datos, servicios externos o sistemas de terceros, permitiendo funcionalidades como pagos, mapas, autenticación o envío de formularios.",
   },
   {
     icon: <TbSeo />,
-    title: "SEO",
+    title: "SEO (Search Engine Optimization)",
     description:
-      "Optimización de tu presencia en línea mediante estrategias de SEO avanzadas.",
+      "Implementación de buenas prácticas de desarrollo orientadas al posicionamiento orgánico en buscadores, incluyendo optimización de rendimiento, estructura semántica del HTML, tiempos de carga, accesibilidad y metadatos, con el objetivo de mejorar la visibilidad del sitio web en resultados de búsqueda.",
+  },
+  {
+    icon: <IoCloudOutline />,
+    title: "Despliegue y administración en la nube",
+    description:
+      "Configuración y despliegue de sitios web en servicios como Vercel, Netlify, o servidores con Docker y Nginx. Gestión de dominios, certificados SSL, variables de entorno y control de versiones con Git.",
   },
 ];
 
@@ -187,42 +185,28 @@ export const dataTestimonials = [
     id: 1,
     name: "George Snow",
     description:
-      "¡Increíble plataforma! Los testimonios aquí son genuinos y me han ayudado a tomar decisiones informadas. ¡Altamente recomendado!",
+      "¡Increíble plataforma! Los testimonios aquí son genuinos y me han ayudado a tomar decisiones informadas. ",
     imageUrl: "/Images/perfilport.jpg",
   },
   {
     id: 2,
     name: "Juan Pérez",
     description:
-      "Me encanta la variedad de testimonios disponibles en esta página. Es inspirador ver cómo otras personas han superado desafíos similares a los míos. ¡Gracias por esta invaluable fuente de motivación!",
+      "Me encanta la variedad de testimonios disponibles en esta página. han superado desafíos similares a los míos. ¡Gracias por esta invaluable fuente de motivación!",
     imageUrl: "/Images/perfilport.jpg",
   },
   {
     id: 3,
     name: "María García",
     description:
-      "Excelente recurso para obtener opiniones auténticas sobre diferentes productos y servicios. Me ha ayudado mucho en mis compras en línea. ¡Bravo por este sitio!",
+      "Excelente recurso para obtener opiniones auténticas sobre diferentes productos y servicios.en línea. ¡Bravo por este sitio!",
     imageUrl: "/Images/perfilport.jpg",
   },
   {
     id: 4,
     name: "Laura Snow",
     description:
-      "¡Qué descubrimiento tan fantástico! Los testimonios aquí son honestos y detallados. Me siento más seguro al tomar decisiones después de leer las experiencias compartidas por otros usuarios.",
-    imageUrl: "/Images/perfilport.jpg",
-  },
-  {
-    id: 5,
-    name: "Carlos Sánchez",
-    description:
-      "Una joya en la web. Los testimonios son fáciles de encontrar y están bien organizados. ¡Definitivamente mi destino número uno cuando necesito referencias confiables!",
-    imageUrl: "/Images/perfilport.jpg",
-  },
-  {
-    id: 6,
-    name: "Antonio Martínez",
-    description:
-      "¡Fantástico recurso para aquellos que buscan validación antes de tomar decisiones importantes! Los testimonios aquí son veraces y realmente útiles. ¡Gracias por simplificar mi proceso de toma de decisiones!",
+      "¡Qué descubrimiento tan fantástico! Los testimonios aquí son honestos y detallados. después de leer las experiencias compartidas por otros usuarios.",
     imageUrl: "/Images/perfilport.jpg",
   },
 ];
