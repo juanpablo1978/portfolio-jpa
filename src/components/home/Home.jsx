@@ -1,5 +1,21 @@
 import { useNavigate } from "react-router-dom";
-import { MdArrowOutward } from "react-icons/md";
+import { CiLocationArrow1 } from "react-icons/ci";
+import { motion } from "framer-motion";
+
+const texto = [
+  "FRONTEND",
+  "DEVELOPER |",
+  "React.js",
+  "CSS",
+  "HTML5",
+  "|",
+  "Next.js",
+  "|",
+  "JAVASCRIPT ",
+  "Typescript",
+  "|",
+  "TAILWIND",
+];
 
 //https://www.youtube.com/shorts/k6ug-vCi20I
 
@@ -12,56 +28,59 @@ const Home = () => {
 
   return (
     <main
-      className="min-h-screen text-4xl bg-gradient-to-r from-blue-950 to-black z-20
-    flex justify-center items-center"
+      className="min-h-screen bg-gradient-to-r from-blue-950 to-black z-20
+    flex flex-col lg:flex-row justify-center items-center px-3 py-9 lg:px-16"
     >
-      <section
-        className="flex flex-col lg:flex-row lg:gap-[115px] md:gap-[115px] my-[190px]
-       items-center "
-      >
-        <div className="text-2xl lg:text-[53px] lg:font-bold font-medium pt-20 md:pt-0 lg:pt-0 pb-7">
-          <h1 className="text-teal-500 text-[53px]">Juan Pablo Andrujovich</h1>
+      <article className="mt-[200px] lg:mt-0 pb-7 text-teal-200 text-2xl lg:text-[43px] px-10
+     font-bold leading-[50px] lg:leading-[65px] text-center lg:pr-20 lg:mb-16">
+        {texto.map((word, index) => (
+          <motion.span
+            key={index}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: index * 0.3, duration: 0.5 }}
+            style={{ marginRight: "0.5rem", display: "inline-block" }}
+          >
+            {word}
+          </motion.span>
+        ))}
+      </article>
+
+      <article className="lg:flex lg:flex-col md:flex md:flex-col">
+        <div
+          className=" md:w-96 lg:px-0 text-lg lg:text-[24px] pb-11 text-slate-300 lg:w-[700px]
+           px-14 text-left lg:pt-16"
+        >
+          <p>
+            Desarrollo y mantengo aplicaciones <span className="text-slate-600 font-semibold">web eficientes y escalables, </span>
+            priorizando la experiencia del usuario y el rendimiento. Me
+            especializo en implementar buenas prácticas y estar al tanto de las
+            <span className="text-slate-600 font-semibold"> últimas tendencias y tecnologías</span> del ecosistema web.
+          </p>
           <br />
-          <h2 className="text-blue-200 leading-[70px]">
-            FRONTEND DEVELOPER
-            <span className="text-[23px]">
-              {" "}
-              <br />
-              <span className="text-teal-500 text-[35px]">REACT</span> | CSS |
-              HTML5 | Next.js | Javascript | Typescript
-              <br />
-              <span className="text-teal-500 text-[35px]">
-                PERFECT PIXEL | Tailwind
-              </span>
-            </span>
-          </h2>
+          <p>
+            Apasionado por la maquetación, enfocado en crear y mantener la parte
+            visual e interactiva de las aplicaciones web utilizando <span className="text-slate-600 font-semibold">React.js</span>,
+            mis principales responsabilidades son el desarrollo de interfaces de
+            usuario - implementación de <span  className="text-slate-600 font-semibold">diseño responsivo</span> - <span className="text-slate-600 font-semibold" >integración APIs</span> -
+            en colaboración con otros equipos de trabajo.
+          </p>
         </div>
-        <article className="lg:flex lg:flex-col md:flex md:flex-col">
-          <div className="text-white px-11 text-left">
-            <div className="lg:w-96 md:w-96">
-              <p className="text-lg lg:text-2xl pb-11 text-slate-300">
-                Desarrollo y mantenimiento de sitios web atractivos y
-                funcionales. Me gusta mantenerme actualizado en las últimas
-                tendencias del sector. Mi objetivo es crear buenas experiencias
-                para los usuarios y optimizar el rendimiento de los sitios.
-              </p>
-            </div>
-          </div>
-          <div className="flex text-lg justify-start px-11 gap-3">
-            <button
-              onClick={goToPortfolio}
-              className="text-teal-300 hover:text-teal-500 p-2 rounded-[55px] text-2xl font-normal
-          transition-all duration-300 w-52 bg-white/15 background-blur-sm lg:w-[358px] lg:h-[67px] flex
+        <div className="flex text-lg justify-start px-11 gap-3 lg:pt-8">
+          <button
+            onClick={goToPortfolio}
+            className="text-slate-400 hover:text-slate-500 p-2 rounded-[55px] lg:text-2xl font-normal
+          transition-all duration-300 w-[300px]shadow-2xl bg-transparent border border-white/10
+           hover:bg-blue-900/10 hover:border-blue-500/30 lg:w-[358px] lg:h-[67px] flex
            items-center justify-center gap-x-2"
-            >
-              <span>EXPERIENCIA / PROYECTOS</span>
-              <span className="text-[23px]">
-                <MdArrowOutward />
-              </span>
-            </button>
-          </div>
-        </article>
-      </section>
+          >
+            <span>EXPERIENCIA / PROYECTOS</span>
+            <span className="text-[23px]">
+              <CiLocationArrow1 />
+            </span>
+          </button>
+        </div>
+      </article>
     </main>
   );
 };

@@ -3,8 +3,8 @@ import { RiProgress8Line } from "react-icons/ri";
 
 const AboutMe = () => {
   return (
-    <main className="min-h-screen bg-gradient-to-r from-blue-950 to-black text-white pt-52 md:py-40 lg:py-40 flex flex-col ">
-      <h2 className="text-center pb-16 px-2 text-2xl lg:text-[40px] font-semibold">
+    <main className="min-h-screen bg-gradient-to-r from-blue-950 to-black pt-52 md:py-40 lg:py-40 flex flex-col text-slate-200">
+      <h2 className="text-center pb-16 px-2 text-2xl lg:text-[40px] font-semibold text-slate-200">
         Trayectoria académica y experiencia laboral
       </h2>
       <section className="flex justify-center px-14 gap-5 md:relative lg:relative ">
@@ -28,7 +28,7 @@ const AboutMe = () => {
               >
                 {data.date}
               </span>
-              <h3 className="font-bold pb-1 lg:text-[28px]">{data.title}</h3>
+              <h3 className="font-bold pb-1 lg:text-[28px] text-slate-200">{data.title}</h3>
               <div>
                 <div className="font-bold text-slate-500 pb-1 lg:text-[24px]">
                   {data.subtitle}

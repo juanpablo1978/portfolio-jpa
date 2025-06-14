@@ -1,11 +1,10 @@
-import { GrGroup } from "react-icons/gr";
 import { AiOutlineApi } from "react-icons/ai";
 import { TbSeo } from "react-icons/tb";
 import { BsLayoutTextSidebarReverse } from "react-icons/bs";
 import { CiLinkedin, CiFacebook, CiMobile3 } from "react-icons/ci";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaReact } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { LuHome } from "react-icons/lu";
+import { AiOutlineHome } from "react-icons/ai";
 import { GoPerson, GoBook } from "react-icons/go";
 import { IoCodeSlash, IoCloudOutline } from "react-icons/io5";
 
@@ -36,7 +35,7 @@ export const itemsNavbar = [
   {
     id: 1,
     title: "Home",
-    icon: <LuHome className="h-6 w-6" />,
+    icon:<AiOutlineHome className="h-6 w-6"/> ,
     link: "/",
   },
   {
@@ -108,7 +107,7 @@ export const serviceData = [
       "Creación de interfaces adaptables a todo tipo de dispositivos (móviles, tablets y escritorio) utilizando tecnologías modernas como HTML5, CSS3, JavaScript, React y frameworks CSS. Foco en experiencia de usuario fluida y diseño limpio.",
   },
   {
-    icon: <GrGroup />,
+    icon: <FaReact />,
     title: "Desarrollo de aplicaciones con React / Next.js",
     description:
       "Creación de aplicaciones web modernas con React y/o Next.js, aprovechando renderizado del lado del servidor (SSR), generación estática (SSG), rutas dinámicas y optimización automática de recursos.",
@@ -133,50 +132,86 @@ export const serviceData = [
   },
 ];
 
+export const dataAiko = [
+    {
+    id: 1,
+    title: "Aikodev (Trabajo Profesional)",
+    image: "/Images/print-portfolio2.png",
+     tecnologias: [ "Next.js", "Tailwind", "Typescript", "IA"],
+    description:"Plataforma educativa IT desarrollada con Next.js, Tailwind y TypeScript. Proyecto remunerado enfocado en ofrecer cursos para estudiantes tech, facilitando el aprendizaje moderno y ampliando el acceso a la formación en tecnología.",
+    urlDemo: "https://www.aikodev.com/?fbclid=PAZXh0bgNhZW0CMTEAAacpD39ONorwuJdewkKp1crRNZqHneitvNnuHcB-0-TPTNiUBtlwDQRCZbpvCw_aem_2XH74sBqKSVUW-1JtxM2SQ",
+  },
+    {
+    id: 2,
+    title: "Ghibli Api (Proyecto Open Source)",
+     tecnologias: [ "React", "Tailwind", "Markdown", "Storybook"],
+    image: "/Images/ghibliapi.png",
+    description:  "Aplicación web (en construcción) basada en el stack MERN. Se trata una API REST de películas de Studio Ghibli y su interfaz con React y Tailwind. Incluye documentación en Markdown y componentes reutilizables desarrollados con Storybook.",
+    urlGithub: "https://github.com/Aikodev-labs/Ghibli-API-platform",
+    urlDemo: "https://ghibliapi.aikodev.com/",
+  },
+
+]
+
 export const dataPortfolio = [
+
   {
     id: 1,
-    title: "Sass Portfolio",
-    image: "/Images/portfoliosass.png",
-    urlGithub: "https://github.com/juanpablo1978/portfolio",
-    urlDemo: "https://sass-portfolio-psi.vercel.app/",
-  },
-  {
-    id: 2,
-    title: "Asociación",
-    image: "/Images/asociacion.png",
+    title: "MyGitHub",
+     tecnologias: [ "React", "Typescript",  "TanStack", "Zustand"],
+    image: "/Images/github.png",
+    description:"Proyecto personal para practicar React con TypeScript, Zustand y TanStack Query. Simula un perfil de GitHub, destacando habilidades en consumo de APIs, gestión de estado, maquetado perfect pixel y diseño responsivo moderno.",
     urlGithub: "https://github.com/juanpablo1978/asociacion.github.io",
     urlDemo: "https://asociacion-github-io.vercel.app/",
   },
   {
-    id: 3,
+    id: 2,
     title: "React Movies",
+     tecnologias: ["React", "Tailwind", "FormValidation", "Redux"],
     image: "/Images/reactmovies.png",
+    description:"Aplicación web que muestra películas consumiendo una API desarrollada en equipo. Creada con React, Redux y Tailwind. Ideal para estudiantes IT que deseen practicar consumo de APIs y diseño responsivo.",
     urlGithub: "https://github.com/juanpablo1978/react-movies",
     urlDemo: "https://react-movies-murex.vercel.app/",
   },
+
+  {
+    id: 3,
+    title: "E-Commerce",
+     tecnologias: ["React", "Tailwind", "Context"],
+    image:
+      "/Images/ecommerce.png",
+      description:"Aplicación e-commerce desarrollada con React, Context API y Tailwind. Simula una tienda online para practicar maquetado, lógica de carrito y gestión de estado. Ideal para demostrar habilidades frontend aplicadas a retail.",
+    urlGithub: "https://github.com/juanpablo1978/e-commerce",
+    urlDemo: "https://e-commerce-pink-three-60.vercel.app/",
+  },
   {
     id: 4,
-    title: "Ghibli Api",
-    image: "/Images/ghibliapi.png",
-    urlGithub: "https://github.com/Aikodev-labs/Ghibli-API-platform",
-    urlDemo: "https://ghibliapi.aikodev.com/",
-  },
-  {
-    id: 5,
-    title: "E-Commerce",
-    image:
-      "https://i.pinimg.com/564x/ab/f7/2e/abf72ebe2afe5166da893d5525e154c1.jpg",
-    urlGithub: "#!",
-    urlDemo: "#!",
-  },
-  {
-    id: 6,
-    title: "Web",
+    title: "Translate App",
+     tecnologias: ["MongoDB", "Express", "React"],
     image:
       "https://i.pinimg.com/564x/36/10/4b/36104baa94fe8229c62d2729d70afd32.jpg",
+      description:"Aplicación de traducción de textos a múltiples idiomas. Desarrollada con React y Tailwind, integra consumo de APIs y funciones asíncronas para demostrar manejo de datos externos y experiencia de usuario fluida.",
     urlGithub: "#!",
     urlDemo: "#!",
+  },
+    {
+    id: 5,
+    title: "To Do App",
+     tecnologias: ["MongoDB", "Express", "React"],
+    image:
+      "https://i.pinimg.com/564x/36/10/4b/36104baa94fe8229c62d2729d70afd32.jpg",
+      description:"Aplicación To Do con funcionalidades completas: renderizado dinámico, manejo de estados, eventos del usuario y persistencia en localStorage. Desarrollada con foco en UX, UI clara y diseño responsive.",
+    urlGithub: "#!",
+    urlDemo: "#!",
+  },
+    {
+    id: 6,
+    title: "Sass Portfolio",
+     tecnologias: ["HTML", "CSS", "Sass"],
+    image: "/Images/portfoliosass.png",
+    description:"Portfolio estático creado con HTML, CSS y Sass. Orientado a desarrolladores y diseñadores, destaca la organización del código, la estructura responsive y el uso de un preprocesador para estilos escalables.",
+    urlGithub: "https://github.com/juanpablo1978/portfolio",
+    urlDemo: "https://sass-portfolio-psi.vercel.app/",
   },
 ];
 
