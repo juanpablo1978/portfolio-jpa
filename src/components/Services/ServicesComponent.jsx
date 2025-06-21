@@ -7,7 +7,8 @@ const ServicesComponent = () => {
     flex-col py-36 items-center"
     >
       <section className="px-7 lg:mr-10 lg:px-[290px] md:px-[150px]">
-        <h2 className="text-center py-8 lg:pb-8 lg:text-[40px] text-3xl font-semibold text-slate-200">
+        <h2 className="text-center pt-[105px] lg:pt-0 lg:py-8 pb-8 lg:text-[40px]
+         text-3xl font-semibold text-slate-200">
           Mis servicios
         </h2>
    

@@ -65,7 +65,7 @@ export const dataAboutPage = [
     title: "Desarrollo Web",
     subtitle: "CoderHouse",
     description:
-      "HTML y CSS - Prototipado, wireframe y maquetado - Versionado de código con GIT, GitHub - SASS - Bootstrap - SEO - Box Modeling - Flexbox - Grid - Animaciones, Transformaciones y Transiciones - Diseño responsive - Deploy - Presupuesto e interacción con el cliente.",
+      "HTML y CSS - Prototipado, wireframe y maquetado - Versionado de código con GIT, GitHub - SASS - Bootstrap - SEO - Box Modeling - Flexbox - Grid - Animaciones, Transformaciones y Transiciones - Diseño responsive - Deploy.",
   },
   {
     id: 2,
@@ -89,7 +89,7 @@ export const dataAboutPage = [
     title: "Desarrollador Frontend",
     subtitle: "Aikodev",
     description:
-      "Desarrollador Frontend React: HTML y CSS -  Javascript - React.js - Next - Tailwind - Librerías UI -  StoryBook - Markdown - GitHub - Metodolías Agiles - Jira - GIT Flow.",
+      "Desarrollador Frontend React: HTML y CSS -  Javascript - React.js - Next - Tailwind - Librerías UI -  StoryBook - Markdown - GitHub - Metodolías Agiles - Jira - GIT Flow - Typescript.",
   },
 ];
 
