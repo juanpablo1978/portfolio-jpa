@@ -47,8 +47,8 @@ const Home = () => {
 
       <article className="lg:flex lg:flex-col md:flex md:flex-col">
         <div
-          className=" md:w-96 lg:px-0 text-[22px] lg:text-[24px] pb-11 text-slate-300 lg:w-[700px]
-           px-14 text-left lg:pt-16"
+          className=" md:w-[800px] lg:px-0 text-[22px] lg:text-[24px] pb-11 text-slate-300 lg:w-[700px]
+           px-14 text-left lg:pt-16 md:flex md:gap-x-8 lg:flex-col"
         >
           <p>
             Desarrollo y mantenimiento de aplicaciones <span className="text-cyan-700 font-semibold">web eficientes y escalables, </span>
@@ -65,7 +65,7 @@ const Home = () => {
             en colaboración con otros equipos de trabajo.
           </p>
         </div>
-        <div className="flex text-lg justify-start px-11 gap-3 lg:pt-8 pb-20 lg:pb-0">
+        <div className="flex text-lg justify-start md:justify-center px-11 gap-3 lg:pt-8 pb-20 lg:pb-0">
           <button
             onClick={goToPortfolio}
             className="text-slate-400 hover:text-slate-500 p-2 rounded-[55px] lg:text-2xl font-normal

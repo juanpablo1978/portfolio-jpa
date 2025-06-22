@@ -10,21 +10,21 @@ const Portfolio = () => {
      flex justify-center items-center flex-col"
     >
       <h3 className="text-slate-200 text-[22px] lg:text-[40px] font-bold text-center lg:pb-9 lg:mb-14
-      my-14">
+      my-14 md:my-20 md:text-[30px]">
         Experiencia laboral - Aikodev
       </h3>
 
        <article className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-16">
         {dataAiko.map((data) => (
           <article
-            className="w-[325px] h-[600px] lg:w-[570px] lg:h-[640px] md:w-[350px] md:h-[440px] rounded-md
+            className="w-[325px] h-[600px] lg:w-[570px] lg:h-[640px] md:w-[350px] md:h-[650px] rounded-md
                bg-transparent border border-white/10 
                shadow-2xl transition-colors duration-300
            hover:bg-blue-900/10 hover:border-blue-500/30 "
             key={data.id}
           >
             <article
-              className="w-[323px] h-[250px] lg:w-[568px] lg:h-[360px] md:w-[335px] md:h-[300px]
+              className="w-[323px] h-[250px] lg:w-[568px] lg:h-[360px] md:w-[348px] md:h-[300px]
                rounded-t-md pb-5 "
             >
               <img
@@ -77,21 +77,21 @@ const Portfolio = () => {
       </article>
 
       
-      <h3 className="text-slate-200 text-2xl lg:text-[40px] font-bold text-center my-10 lg:mb-14">
+      <h3 className="text-slate-200 text-2xl lg:text-[40px] md:text-[30px] font-bold text-center my-10 lg:mb-14">
         Proyectos
       </h3>
 
       <article className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-16">
         {dataPortfolio.map((data) => (
           <article
-            className="w-[325px] h-[600px] lg:w-[570px] lg:h-[640px] md:w-[350px] md:h-[440px] rounded-md
+            className="w-[325px] h-[600px] lg:w-[570px] lg:h-[640px] md:w-[350px] md:h-[640px] rounded-md
                bg-transparent border border-white/10 
                shadow-2xl transition-colors duration-300
            hover:bg-blue-900/10 hover:border-blue-500/30 "
             key={data.id}
           >
             <article
-              className="w-[323px] h-[250px] lg:w-[568px] lg:h-[340px] md:w-[335px] md:h-[300px]
+              className="w-[323px] h-[250px] lg:w-[568px] lg:h-[340px] md:w-[348px] md:h-[300px]
                rounded-t-md pb-5 "
             >
               <img
