@@ -1,6 +1,8 @@
 import { socialNetworks } from "../../../public/Data/Data";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import perfil from "/public/Images/perfilport.jpg"
+
 
 const Header = () => {
   return (
@@ -20,7 +22,7 @@ const Header = () => {
             <div className="w-[70px] h-[70px] rounded-full object-cover border-[3px] border-blue-200/30">
               <img
                 className="rounded-full object-cover"
-                src="public/Images/perfilport.jpg"
+                src={perfil}
                 alt="foto perfil"
               />
             </div>
