@@ -187,25 +187,16 @@ export const dataPortfolio = [
   {
     id: 4,
     title: "Translate App",
-     tecnologias: ["MongoDB", "Express", "React"],
+     tecnologias: ["React", "Typescript", "Tailwind"],
     image:
-      "https://i.pinimg.com/564x/36/10/4b/36104baa94fe8229c62d2729d70afd32.jpg",
+      "/Images/print-translate.png",
       description:"Aplicación de traducción de textos a múltiples idiomas. Desarrollada con React y Tailwind, integra consumo de APIs y funciones asíncronas para demostrar manejo de datos externos y experiencia de usuario fluida.",
-    urlGithub: "#!",
-    urlDemo: "#!",
+    urlGithub: "https://github.com/juanpablo1978/translate-app",
+    urlDemo: "https://translate-app-zeta-swart.vercel.app/",
   },
+ 
     {
     id: 5,
-    title: "To Do App",
-     tecnologias: ["MongoDB", "Express", "React"],
-    image:
-      "https://i.pinimg.com/564x/36/10/4b/36104baa94fe8229c62d2729d70afd32.jpg",
-      description:"Aplicación To Do con funcionalidades completas: renderizado dinámico, manejo de estados, eventos del usuario y persistencia en localStorage. Desarrollada con foco en UX, UI clara y diseño responsive.",
-    urlGithub: "#!",
-    urlDemo: "#!",
-  },
-    {
-    id: 6,
     title: "Sass Portfolio",
      tecnologias: ["HTML", "CSS", "Sass"],
     image: "/Images/portfoliosass.png",
@@ -215,33 +206,4 @@ export const dataPortfolio = [
   },
 ];
 
-export const dataTestimonials = [
-  {
-    id: 1,
-    name: "George Snow",
-    description:
-      "¡Increíble plataforma! Los testimonios aquí son genuinos y me han ayudado a tomar decisiones informadas. ",
-    imageUrl: "/Images/perfilport.jpg",
-  },
-  {
-    id: 2,
-    name: "Juan Pérez",
-    description:
-      "Me encanta la variedad de testimonios disponibles en esta página. han superado desafíos similares a los míos. ¡Gracias por esta invaluable fuente de motivación!",
-    imageUrl: "/Images/perfilport.jpg",
-  },
-  {
-    id: 3,
-    name: "María García",
-    description:
-      "Excelente recurso para obtener opiniones auténticas sobre diferentes productos y servicios.en línea. ¡Bravo por este sitio!",
-    imageUrl: "/Images/perfilport.jpg",
-  },
-  {
-    id: 4,
-    name: "Laura Snow",
-    description:
-      "¡Qué descubrimiento tan fantástico! Los testimonios aquí son honestos y detallados. después de leer las experiencias compartidas por otros usuarios.",
-    imageUrl: "/Images/perfilport.jpg",
-  },
-];
+

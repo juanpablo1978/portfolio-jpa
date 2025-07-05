@@ -18,7 +18,7 @@ const Header = () => {
                  transition-colors duration-300 pb-5 lg:pb-0 text-slate-400"
       >
         <Link to="/">
-          <article className="flex items-center gap-4 flex-col lg:flex-row">
+          <article className="flex items-center gap-4 flex-col lg:flex-row ">
             <div className="w-[70px] h-[70px] rounded-full object-cover border-[3px] border-blue-200/30">
               <img
                 className="rounded-full object-cover"
