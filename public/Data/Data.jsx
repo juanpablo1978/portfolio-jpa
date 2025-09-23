@@ -166,12 +166,12 @@ export const dataPortfolio = [
   },
   {
     id: 2,
-    title: "React Movies",
-     tecnologias: ["React", "Tailwind", "FormValidation", "Redux"],
-    image: "/Images/reactmovies.png",
-    description:"Aplicación web que muestra películas consumiendo una API desarrollada en equipo. Creada con React, Redux y Tailwind. Ideal para estudiantes IT que deseen practicar consumo de APIs y diseño responsivo.",
-    urlGithub: "https://github.com/juanpablo1978/react-movies",
-    urlDemo: "https://react-movies-murex.vercel.app/",
+    title: "Redux Toolkit Crud",
+     tecnologias: ["React", "Tailwind", "Redux"],
+    image: "/Images/crud.png",
+    description:"Aplicación CRUD con Redux Toolkit que permite crear, leer, actualizar y eliminar registros. Incluye sistema de login y logout con protección de rutas, asegurando acceso seguro y gestión eficiente de datos.",
+    urlGithub: "https://github.com/juanpablo1978/crud-rtk",
+    urlDemo: "https://crud-rtk-eta.vercel.app/",
   },
 
   {
@@ -184,6 +184,17 @@ export const dataPortfolio = [
     urlGithub: "https://github.com/juanpablo1978/e-commerce",
     urlDemo: "https://e-commerce-pink-three-60.vercel.app/",
   },
+
+      {
+    id: 5,
+    title: "Quiz",
+     tecnologias: ["Next", "Zutand", "Tailwind", 'Typescript'],
+    image: "/Images/quiz.png",
+    description:"Quiz, interactivo con paginado, desarrollado en Next usando Zustand para manejo de estado global. Incluye navegación entre preguntas, feedback dinámico y UI limpia para experiencia fluida y enfocada.",
+    urlGithub: "https://github.com/juanpablo1978/quizz-app",
+    urlDemo: "https://quizz-app-blush-iota.vercel.app/",
+  },
+  
   {
     id: 4,
     title: "Translate App",
@@ -195,15 +206,7 @@ export const dataPortfolio = [
     urlDemo: "https://translate-app-zeta-swart.vercel.app/",
   },
  
-    {
-    id: 5,
-    title: "Sass Portfolio",
-     tecnologias: ["HTML", "CSS", "Sass"],
-    image: "/Images/portfoliosass.png",
-    description:"Portfolio estático creado con HTML, CSS y Sass. Orientado a desarrolladores y diseñadores, destaca la organización del código, la estructura responsive y el uso de un preprocesador para estilos escalables.",
-    urlGithub: "https://github.com/juanpablo1978/portfolio",
-    urlDemo: "https://sass-portfolio-psi.vercel.app/",
-  },
+
 ];
 
 

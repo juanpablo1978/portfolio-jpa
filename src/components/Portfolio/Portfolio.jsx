@@ -77,8 +77,8 @@ const Portfolio = () => {
       </article>
 
       
-      <h3 className="text-slate-200 text-2xl lg:text-[40px] md:text-[30px] font-bold text-center my-10 lg:mb-14">
-        Proyectos
+      <h3 className="text-slate-200 text-2xl lg:text-[40px] md:text-[30px] font-bold text-center my-20 lg:mb-14">
+        Proyectos Personales
       </h3>
 
       <article className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-16">
