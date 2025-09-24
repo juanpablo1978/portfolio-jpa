@@ -135,7 +135,7 @@ export const serviceData = [
 export const dataAiko = [
     {
     id: 1,
-    title: "Aikodev (Trabajo Profesional)",
+    title: "Aikodev",
     image: "/Images/print-portfolio2.png",
      tecnologias: [ "Next.js", "Tailwind", "Typescript", "IA"],
     description:"Plataforma educativa IT desarrollada con Next.js, Tailwind y TypeScript. Proyecto remunerado enfocado en ofrecer cursos para estudiantes tech, facilitando el aprendizaje moderno y ampliando el acceso a la formación en tecnología.",
@@ -143,10 +143,10 @@ export const dataAiko = [
   },
     {
     id: 2,
-    title: "Ghibli Api (Proyecto Open Source)",
+    title: "Ghibli Api",
      tecnologias: [ "React", "Tailwind", "Markdown", "Storybook"],
     image: "/Images/ghibliapi.png",
-    description:  "Aplicación web (en construcción) basada en el stack MERN. Se trata una API REST de películas de Studio Ghibli y su interfaz con React y Tailwind. Incluye documentación en Markdown y componentes reutilizables desarrollados con Storybook.",
+    description:  "Aplicación web, open source (en construcción) basada en el stack MERN. Se trata una API REST de películas de Studio Ghibli y su interfaz con React y Tailwind. Incluye documentación en Markdown y componentes reutilizables desarrollados con Storybook.",
     urlGithub: "https://github.com/Aikodev-labs/Ghibli-API-platform",
     urlDemo: "https://ghibliapi.aikodev.com/",
   },
