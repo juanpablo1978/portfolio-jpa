@@ -4,9 +4,10 @@ import { useState } from "react";
 import PropTypes from "prop-types"
 
 
+
 const MyProjctsCard = ({data}) => {
 
-  const {id, image, title, description, urlDemo, urlGithub, tecnologias} = data;
+  const {id, image, title, description, urlDemo, urlGithub, tecnologias, portugues} = data;
 
    const [open, setOpen] = useState(false);
     const togleOpen = () => setOpen(true);
@@ -28,7 +29,7 @@ const MyProjctsCard = ({data}) => {
                 </article>
     
                 <article className="gap-3 px-3">
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-x-4">
                     <div>
                       <h3 className="text-slate-200 text-[18px] lg:text-3xl font-normal pb-2 px-3 lg:my-2">
                         {title}
@@ -40,7 +41,8 @@ const MyProjctsCard = ({data}) => {
                       <button
                         onClick={togleOpen}
                         className="mt-2 inline-block px-4 py-1 rounded-full border border-teal-400 text-[14px]
-                               text-teal-400 hover:bg-teal-400 hover:text-black transition-colors"
+                               text-teal-400  hover:bg-yellow-300 hover:border-yellow-300
+                               mb-4 hover:text-black transition-colors"
                       >
                         PORTUGUÉS
                       </button>
@@ -61,10 +63,11 @@ const MyProjctsCard = ({data}) => {
                         >
                           ✕
                         </button>
+                        {
+
+                        }
                         <p className="text-slate-200 text-[18px] leading-relaxed text-center">
-                          Aquí puedes poner hasta treinta palabras explicando algo
-                          breve e importante, manteniendo claridad y estilo del
-                          portfolio.
+                         {portugues}
                         </p>
                       </div>
                     </div>
@@ -114,6 +117,7 @@ MyProjctsCard.propTypes = {
     id: PropTypes.number.isRequired,
     image: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
+       portugues: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     urlGithub: PropTypes.string,
     urlDemo: PropTypes.string,
